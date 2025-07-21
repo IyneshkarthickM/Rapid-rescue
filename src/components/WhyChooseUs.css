@@ -1,0 +1,186 @@
+.why-choose-container {
+  padding: 4rem 2rem;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #000000;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.patient-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300bfff'%3E%3Cpath d='M18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4Z M9 11H11V9H13V11H15V13H13V15H11V13H9V11Z'/%3E%3C/svg%3E");
+}
+
+.emergency-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300bfff'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z'/%3E%3C/svg%3E");
+}
+
+.support-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300bfff'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z'/%3E%3C/svg%3E");
+}
+
+.fleet-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300bfff'%3E%3Cpath d='M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z'/%3E%3C/svg%3E");
+}
+
+.feature-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.images-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.service-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+  transform: scale(1.05);
+}
+
+.decorative-waves {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 40px;
+  height: 20px;
+}
+
+.decorative-waves::before,
+.decorative-waves::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  background-color: #ff1493;
+  border-radius: 3px;
+}
+
+.decorative-waves::before {
+  width: 40px;
+  bottom: 10px;
+}
+
+.decorative-waves::after {
+  width: 30px;
+  bottom: 0;
+}
+
+.decorative-crosses {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+.cross {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px dashed;
+  transform: rotate(45deg);
+}
+
+.cross.pink {
+  border-color: #ff1493;
+  right: 60px;
+}
+
+.cross.blue {
+  border-color: #00bfff;
+  width: 60px;
+  height: 60px;
+  right: 0;
+}
+
+.book-now-button {
+  display: block;
+  width: 200px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: #ff1493;
+  color: rgb(245, 240, 240);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+  background-color: #ff1493dd;
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .images-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .feature-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .why-choose-container {
+    padding: 2rem 1rem;
+  }
+}
