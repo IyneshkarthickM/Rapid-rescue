@@ -1,0 +1,241 @@
+/* DriverSignup.css */
+/* Custom design for ambulance driver signup form */
+
+:root {
+  --primary-color: #d9364c; /* Ambulance red */
+  --primary-dark: #b3293d;
+  --secondary-color: #2c75b3; /* Medical blue */
+  --secondary-dark: #236099;
+  --accent-color: #ffc107; /* Warning yellow */
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.ambulance-signup-container {
+  background-color: var(--light-color);
+  padding: 30px 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), 
+                    url('https://media.istockphoto.com/id/845088180/photo/flashing-blue-light-bar-on-a-german-fire-truck.jpg?s=612x612&w=0&k=20&c=eWGwVtFhh6t9NY41V4YfnLQJwwafJeFzZiEuU3nbhQk=');
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.ambulance-signup-form {
+  background-color: white;
+  max-width: 700px;
+  width: 100%;
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  margin: 20px;
+}
+
+.ambulance-signup-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.ambulance-signup-form h2 {
+  text-align: center;
+  color: var(--dark-color);
+  margin-bottom: 30px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  position: relative;
+}
+
+.ambulance-signup-form h2::after {
+  content: "🚑";
+  position: absolute;
+  top: -15px;
+  right: 0;
+  font-size: 1.8rem;
+}
+
+.ambulance-signup-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+.ambulance-signup-form input[type="text"],
+.ambulance-signup-form input[type="password"],
+.ambulance-signup-form input[type="date"],
+.ambulance-signup-form select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.ambulance-signup-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px dashed #ccc;
+  border-radius: var(--border-radius);
+  background-color: #f9f9f9;
+}
+
+.ambulance-signup-form input:focus,
+.ambulance-signup-form select:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(44, 117, 179, 0.2);
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-color);
+}
+
+.checkbox-group label {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.submit-button {
+  background: linear-gradient(to right, var(--primary-color), var(--primary-dark));
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, var(--primary-dark), var(--primary-color));
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(217, 54, 76, 0.3);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.submission-confirmation {
+  background-color: white;
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+
+.submission-confirmation h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.submission-confirmation p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--dark-color);
+}
+
+/* Ambulance icon animations for confirmation page */
+.submission-confirmation::before {
+  content: "🚑";
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 20px;
+  animation: drive 2s infinite;
+}
+
+@keyframes drive {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .ambulance-signup-form {
+    padding: 30px 20px;
+  }
+  
+  .ambulance-signup-form h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Custom field styling for ambulance-specific fields */
+#ambulanceType,
+#licenseType {
+  border-left: 4px solid var(--secondary-color);
+}
+
+#emergencyContactName,
+#emergencyContactRelation,
+#emergencyContactPhone {
+  border-left: 4px solid var(--accent-color);
+}
+
+#driverLicenseNumber,
+#licenseExpiryDate,
+#drivingExperience {
+  border-left: 4px solid var(--primary-color);
+}
+
+/* Form sections */
+.ambulance-signup-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.ambulance-signup-form label,
+.ambulance-signup-form input,
+.ambulance-signup-form select,
+.checkbox-group,
+.submit-button {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .ambulance-signup-form {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .checkbox-group,
+  .submit-button {
+    grid-column: 1 / -1;
+  }
+}

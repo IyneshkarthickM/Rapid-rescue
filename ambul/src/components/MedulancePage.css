@@ -1,0 +1,201 @@
+
+.medulance-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+   }
+   
+   
+   
+   .header {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   
+   
+   .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e91e63; 
+   }
+   
+   
+   .logo img {
+    margin-right: 10px;
+    height: 30px;
+   }
+   
+   
+   .nav-items {
+    display: flex;
+    gap: 20px;
+   }
+   
+   
+   .nav-items a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+   }
+   
+   
+   .nav-items a:hover {
+    color: #e91e63;
+   }
+   
+   
+   .header-buttons {
+    display: flex;
+    gap: 10px;
+   }
+   
+   
+   .header-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+   }
+   
+   
+   .book-now {
+    background-color: #e91e63;
+    color: white;
+    display: inline-block;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+   }
+   .Diversignup{
+    background-color: #e91e63;
+    color: white;
+    display: inline-block;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+
+   }
+   
+   
+   .login {
+    background-color: #ffffff;
+    color: #e91e63;
+    border: 1px solid #e91e63;
+   }
+   
+   
+   .book-now:hover {
+    background-color: #c6134d;
+   }
+   
+   
+   .login:hover {
+    background-color: #f9f9f9;
+   }
+   
+   
+   /* Hero Section Styles */
+   .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+   }
+   
+   
+   .hero-content {
+    flex: 1;
+    padding-right: 20px;
+   }
+   
+   
+   .hero-content h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 15px;
+   }
+   
+   
+   .subtitle {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+   }
+   
+   
+   .hero-content p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+   }
+   
+   
+   .book-now-hero {
+    background-color: #e91e63;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+   }
+   
+   
+   .book-now-hero:hover {
+    background-color: #c6134d;
+   }
+   
+   
+   .call-assistance {
+    margin-top: 20px;
+    text-align: center;
+   }
+   
+   
+   .call-assistance span {
+    display: block;
+    margin-bottom: 10px;
+    color: #777;
+   }
+   
+   
+   .phone-number {
+    padding: 12px 24px;
+    border: 1px solid #e91e63;
+    border-radius: 5px;
+    color: #e91e63;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+   }
+   
+   
+   .phone-number:hover {
+    background-color: #ffebee;
+   }
+   
+   
+   .hero-image {
+    flex: 1;
+    text-align: center;
+   }
+   
+   
+   .hero-image img {
+    max-width: 100%;
+    height: auto;
+   }
+   

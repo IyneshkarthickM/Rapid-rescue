@@ -1,0 +1,115 @@
+.support-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+  }
+  
+  .support-header {
+    background: linear-gradient(to right, #40a9ff, #9254de, #f5319d);
+    color: white;
+    padding: 60px 20px 40px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .value-added {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .support-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 5px 0 15px;
+  }
+  
+  .support-description {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 15px;
+  }
+  
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: -60px;
+  }
+  
+  .feature-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 270px;
+    min-height: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature-image-container {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .feature-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .feature-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .feature-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .features-container {
+      padding: 10px;
+    }
+    
+    .feature-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .support-header {
+      padding: 40px 15px 80px;
+    }
+    
+    .features-container {
+      margin-top: -40px;
+    }
+    
+    .feature-card {
+      width: 100%;
+      max-width: 350px;
+      margin-bottom: 15px;
+    }
+    
+    .support-description {
+      font-size: 14px;
+    }
+  }
